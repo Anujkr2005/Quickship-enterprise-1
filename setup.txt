@@ -1,0 +1,16 @@
+for backend
+- terminal open in backend folder
+
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+python seed.py
+uvicorn app.main:app --reload
+
+
+For frontend
+- terminal open in frontend folder
+
+npm i
+npm run dev
